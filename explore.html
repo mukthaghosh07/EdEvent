@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Event management</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/index.html"> <img src="logo.jpg" width="60" height="60"
+                alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link font-weight-bolder" href="/index.html">Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bolder" href="/about.html">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle font-weight-bolder" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Support
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item font-weight-bolder" href="/contact.html">Contact Us</a>
+                        <a class="dropdown-item font-weight-bolder" href="/review.html">Reviews</a>
+                        <a class="dropdown-item font-weight-bolder" href="/suggestion.html">Suggestions</a>
+
+
+                    </div>
+                </li>
+
+            </ul>
+            <div class="mx-2">
+                <button class="btn btn-light" data-toggle="modal" data-target="#loginModal">Login</button>
+                <button class="btn btn-light" data-toggle="modal" data-target="#signupModal">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- login -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login to Ed Event</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title fs-5" id="exampleModalLabel">Sign Up to iCoder</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="comtainer">
+                        <form>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Username</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1"> Confirm Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        I accept the Terms of Use & Privacy Policy
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-2 my-4  mx-2 d-flex justify-content-center">
+        <div class="col-md-5 ">
+            <div
+                class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary">Project Expo</strong>
+                    <h3 class="mb-0">IICC (India International Convention & Expo Centre)</h3>
+                    <br>
+                    <div class="mb-1 text-muted">4.3(141 reviews)</div>
+                    <p class="card-text mb-auto"> H332+M35, Sector 25 Dwarka, Dwarka, New Delhi, Delhi 110061</p>
+                    <a href="http://www.iiccnewdelhi.com/sub/01/sub_1.asp"
+                        class="stretched-link">View Website...</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <!-- width="200" height="250" -->
+                    <img src="e1.jpg" height="250px" width="250px" class="rounded my-2"><br>
+
+                </div>
+            </div>
+        </div>
+       
+     <!-- for 2 box -->
+     <div class="col-md-5 ">
+        <div
+            class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary">Project Expo</strong>
+                <h3 class="mb-0">HITEX Exhibition Centre</h3>
+                <br>
+                <div class="mb-1 text-muted">4.4(24,750)</div>
+                <p class="card-text mb-auto"> Hitex Exhibition Center - Hitex Hall 1, 6, Hitex Road, Izzathnagar, Kothaguda, Telangana 500084</p>
+                <a href="https://hitex.co.in/"
+                    class="stretched-link">View Website...</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+                <!-- width="200" height="250" -->
+                <img src="e2.jpg" height="250px" width="250px" class="rounded my-2"><br>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- for 3 box -->
+    <div class="col-md-5 ">
+        <div
+            class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary">Project Expo</strong>
+                <h3 class="mb-0">Exhibition Grounds<br></h3>
+                <br>
+                <div class="mb-1 text-muted">4.2
+                    (36,666)</div>
+                <p class="card-text mb-auto">Exhibition ground, Patel Nagar, Ghosha Mahal North, Nampally, Hyderabad, Telangana 500001</p>
+                <a href="http://www.exhibitionsociety.com/"
+                    class="stretched-link">View Website...</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+                <!-- width="200" height="250" -->
+                <img src="e3.jpg" height="250px" width="250px" class="rounded my-2"><br>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- for 4 box -->
+    <div class="col-md-5 ">
+        <div
+            class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary">Project Expo</strong>
+                <h3 class="mb-0">Event Planner in Delhi - Expro Events</h3>
+                <br>
+                <div class="mb-1 text-muted">4.6
+                    (11)</div>
+                <p class="card-text mb-auto">509, Floor - 5, Time Tower, Mehrauli-Gurgaon Rd, Sector 28, Gurugram, Haryana 122002</p>
+                <a href="http://www.exproevents.com/"
+                    class="stretched-link">View Website...</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+                <!-- width="200" height="250" -->
+                <img src="e4.jpg" height="250px" width="250px" class="rounded my-2"><br>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- for 5 box -->
+    <div class="col-md-5 ">
+        <div
+            class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary">Project Expo</strong>
+                <h3 class="mb-0">Phoenix Design and Exhibits </h3>
+                   <h5> Exhibition and trade centre</h5>
+                <br>
+                <div class="mb-1 text-muted">4.7(37 reviews)</div>
+                <p class="card-text mb-auto">156, first floor, 9, Pocket C, Delhi, 110085</p>
+                <a href="http://www.phoenixexpo.in/"
+                    class="stretched-link">View Website...</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+                <!-- width="200" height="250" -->
+                <img src="e5.jpg" height="250px" width="250px" class="rounded my-2"><br>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- for 6 box -->
+    <div class="col-md-5 ">
+        <div
+            class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary">Project Expo</strong>
+                <h3 class="mb-0">NSIC Exhibition Ground</h3>
+                <div class="mb-1 text-muted">4.3
+                    (1,855)</div>
+                <p class="card-text mb-auto"> NSIC Estate, Okhla Phase III, Okhla Industrial Estate, New Delhi, Delhi 110020</p>
+                <a href="https://www.nsic.co.in/schemes/Exhibition-Complex-Event-Management"
+                    class="stretched-link">View Website...</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+                <!-- width="200" height="250" -->
+                <img src="e6.jpg" height="250px" width="250px" class="rounded my-2"><br>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
